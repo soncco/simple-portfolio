@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  #content
+    h2
+      i.icon-briefcase
+      |  Trabajos
+
+    h3
+      span.icon-stack
+        i.icon-circle.icon-stack-base
+        i.icon-puzzle-piece.icon-light
+      |  Drupal y administración de contenido
+
+    ul.drupal
+      each site in drupal
+        li
+          img(src = site.image, title = site.description + ' (' + site.url + ')')
+
+    h3
+      span.icon-stack
+        i.icon-circle.icon-stack-base
+        i.icon-puzzle-piece.icon-light
+      |  Sistemas Web
+    p Pronto...
+        
+
+    block scripts
+      yield
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+      script(src='/javascripts/jquery.bxslider/jquery.bxslider.min.js')
+      script(type='text/javascript')
+        $(document).ready(function(){
+          $('.drupal').bxSlider({
+            captions: true,
+            controls: false,
+            mode: 'vertical',
+          });
+        })
+      link(href='/javascripts/jquery.bxslider/jquery.bxslider.css', rel='stylesheet')
