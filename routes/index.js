@@ -10,11 +10,7 @@ exports.portfolio = function(req, res){
   var _path = '/port';
   // TODO: Usar MongoDB
   var _drupal = [
-    {
-      image: _path + '/amazonwildlife.jpg',
-      description: 'Amazon Wild Life Perú',
-      url: 'amazonwildlifeperu.com',
-    },
+    
     {
       image: _path + '/cienciano.jpg',
       description: 'Web Oficial del Club Cienciano del Cusco',
@@ -64,6 +60,11 @@ exports.portfolio = function(req, res){
       image: _path + '/hp.jpg',
       description: 'Hoteles Perú',
       url: 'hotelesperu.com',
+    },
+    {
+      image: _path + '/amazonwildlife.jpg',
+      description: 'Amazon Wild Life Perú',
+      url: 'amazonwildlifeperu.com',
     },
   ];
 
