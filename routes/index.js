@@ -12,6 +12,11 @@ exports.portfolio = function(req, res){
   var _drupal = [
     
     {
+      image: _path + '/mabey.jpg',
+      description: 'Hoteles Mabey',
+      url: 'hotelesmabey.com',
+    },
+    {
       image: _path + '/cienciano.jpg',
       description: 'Web Oficial del Club Cienciano del Cusco',
       url: 'cienciano.com',
